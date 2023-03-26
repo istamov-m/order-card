@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 20px rgba(128, 128, 128, 25%);
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    width: 28em;
+    height: 42em;
+}
+
+img {
+    border-radius: 20px 20px 0 0;
+    width: 28em;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin: 40px 0 0 0;
+    text-align: end;
+
+}
+main p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+main .paragraph {
+    text-align: center;
+    margin: 10px 50px;
+}
+
+.pre-submit {
+    display: flex;
+    flex-direction: row;
+    background: hsl(225, 100%, 98%);
+    align-items: center;
+    justify-content: space-between;
+    width: 19em;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pre-submit p {
+    margin-left: 15px;
+}
+
+.pre-submit a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.pre-submit a:hover {
+    color: hsl(245, 65%, 62%);
+    text-decoration: none;
+}
+
+.submit, .cancel {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.submit {
+    background: hsl(245, 75%, 52%);
+    box-shadow: 0 15px 20px 4px hsla(245, 75%, 52%, 20%);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+    padding: 15px;
+    width: 20em;
+    transition: all 0.3s;
+}
+
+.submit:hover {
+    background: hsl(245, 65%, 62%);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    margin-top: 35px;
+    transition: all 0.3s;
+}
+
+.cancel:hover {
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg)
+    } 
+
+    main {
+        width: 22em;
+        height: 38.5em;
+    }
+
+    img {
+        width: 22em;
+    }
+
+    main .paragraph {
+        margin: 10px 40px 18px 40px;
+        line-height: 25px;
+    }
+
+    .pre-submit {
+        width: 16em;
+        height: 3.4em;
+    }
+
+    .submit {
+        width: 17em;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
